@@ -29,7 +29,6 @@ export class BodyInfoComponent implements OnInit {
   getList() {
     this.lists = this.appService.getList();
     this.copyLists = this.appService.getList();
-    console.log(this.lists);
   }
 
   search(userName, state, heartBeatAt, createdAt) {
@@ -46,12 +45,6 @@ export class BodyInfoComponent implements OnInit {
     localStorage.setItem('state', state);
     localStorage.setItem('heartBeatAt', heartBeatAt);
     localStorage.setItem('createdAt', createdAt);
-
-
-    console.log(userNameArr);
-    console.log(stateArr);
-    console.log(heartBeatAtArr);
-    console.log(createdAtArr);
 
     let tempSearchList1 = [];
     let tempSearchList2 = [];
@@ -176,7 +169,6 @@ export class BodyInfoComponent implements OnInit {
     }
 
     this.lists = tempSearchList4;
-    console.log(this.lists);
   }
 
   // this function split the input value from the search box to array

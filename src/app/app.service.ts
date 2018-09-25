@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AppService {
 
+  // list is all data that is gonna display in the page
   list = [
       {
           "username": "Alexandra Streeter", 

@@ -1,0 +1,40 @@
+<div >
+  <div class="search-area">
+      <div class="search-content">
+        <span>User Name</span>
+        <input class="search-box" type="text" #nameSearchBox>
+      </div>
+
+      <div class="search-content">
+        <span>State</span>
+        <input class="search-box" type="text" #stateSearchBox>
+      </div>
+
+      <div class="search-content">
+        <span>Heart Beat At</span>
+        <input class="search-box" type="text" #heartSearchBox>
+      </div>
+
+      <div class="search-content">
+        <span>Created At</span>
+        <input class="search-box" type="text" #createdSearchBox>
+      </div>
+          
+      <button class="search-button" (click)="search(nameSearchBox.value, stateSearchBox.value, heartSearchBox.value, createdSearchBox.value)">Search</button>
+      
+  </div>
+  
+
+  <header></header>
+
+  <div class="body">
+    <div class="body-info" *ngFor="let list of lists">
+      <span>{{list.username}}</span>
+      <span>{{list.state}}</span>
+      <span>{{list.heartbeatAt}}</span>
+      <span>{{list.createdAt}}</span>
+      <hr>
+    </div>
+  </div>
+
+</div>

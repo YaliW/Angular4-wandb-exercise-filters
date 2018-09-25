@@ -1,0 +1,22 @@
+.body-info {
+    width: 100%;
+    display: inline-block;
+    span {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+    }
+}
+
+.search-area {
+    display: inline-block;
+    width: 100%;
+    .search-content {
+        display: inline-block;
+        width: 20%;
+    }
+    .search-button {
+        display: inline-block;
+        width: 10%;
+    }
+}
